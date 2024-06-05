@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  WB_App
+
+  Created by Семен Гайдамакин on 05.06.2024.
+  
+*/
+
+//Onboarding
+"onboarding_title" = "Общайтесь в друзьями легко";
+"agreement" = "Пользовательское соглашение";
+"start_chatting" = "Начать общаться";
+
+//Tabs
+"tab_contacts" = "Контакты";
+"tab_chats" = "Чаты";
+"tab_more" = "Еще";
