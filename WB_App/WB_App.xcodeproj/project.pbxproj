@@ -152,10 +152,7 @@
 		3F1B742B2C109F5700210E1A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3F1B74342C10A42500210E1A /* MoreScreen */,
-				3F1B74332C10A40600210E1A /* ChatsScreen */,
-				3F1B74322C10A3F600210E1A /* ContactsScreen */,
-				3F1B742F2C10A28700210E1A /* TabView */,
+				3F1B74532C13372000210E1A /* TabFlow */,
 				3F1B742C2C109F5C00210E1A /* Onboarding */,
 			);
 			path = Modules;
@@ -217,6 +214,17 @@
 				3F1B74212C108D9900210E1A /* TextLinkButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3F1B74532C13372000210E1A /* TabFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3F1B74342C10A42500210E1A /* MoreScreen */,
+				3F1B74332C10A40600210E1A /* ChatsScreen */,
+				3F1B74322C10A3F600210E1A /* ContactsScreen */,
+				3F1B742F2C10A28700210E1A /* TabView */,
+			);
+			path = TabFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -12,12 +12,24 @@ struct OnboardingView: View {
     @State var isSheetPresented = false
     
     var body: some View {
+        onboardingImage
+        
+        VStack {
+            textButton
+            startButton
+        }
+        .padding(.bottom, UIConstants.Spacer.toBottom)
+    }
+}
+
+
+private extension OnboardingView {
+    
+    var onboardingImage: some View {
         VStack {
             Spacer()
                 .frame(height: UIConstants.Spacer.toTop)
             Image(WBIcons.Image.onboarding)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
                 .padding(.bottom, UIConstants.Padding.imageBottom)
                 .padding(.horizontal, UIConstants.Padding.imageHorizontal)
             Text(WBKeys.Onboarding.title)
@@ -27,26 +39,25 @@ struct OnboardingView: View {
             Spacer()
         }
         .background(Color.white)
-        VStack {
-            TextLinkButton(text: WBKeys.Onboarding.agreement)
-                .padding(.bottom, UIConstants.Padding.textLinkButtonBottom)
-            ProceedButton(text: WBKeys.Onboarding.start) {
-                isSheetPresented = true
-            }
-                .sheet(isPresented: $isSheetPresented, 
-                       onDismiss: {
-                    print("Sheet was dismissed")
-                }, content: {
-                    TabsView()
-                })
-            Spacer()
-                .frame(height: UIConstants.Spacer.toBottom)
-        }
     }
-}
-
-#Preview {
-    OnboardingView()
+    
+    var textButton: some View {
+        TextLinkButton(text: WBKeys.Onboarding.agreement)
+            .padding(.bottom, UIConstants.Padding.textLinkButtonBottom)
+    }
+    
+    var startButton: some View {
+        ProceedButton(text: WBKeys.Onboarding.start) {
+            isSheetPresented = true
+        }
+            .sheet(isPresented: $isSheetPresented,
+                   onDismiss: {
+                print("Sheet was dismissed")
+            }, content: {
+                TabsView()
+            })
+    }
+    
 }
 
 fileprivate enum UIConstants {
@@ -64,7 +75,8 @@ fileprivate enum UIConstants {
         
         static let textLinkButtonBottom: CGFloat = 18
     }
-    
-   
-   
+}
+
+#Preview {
+    OnboardingView()
 }
