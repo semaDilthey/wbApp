@@ -15,3 +15,6 @@
 "tab_contacts" = "Контакты";
 "tab_chats" = "Чаты";
 "tab_more" = "Еще";
+
+//Status
+"online" = "Онлайн";

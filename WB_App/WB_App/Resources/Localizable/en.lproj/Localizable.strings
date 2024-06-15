@@ -15,3 +15,6 @@
 "tab_contacts" = "Contacts";
 "tab_chats" = "Chats";
 "tab_more" = "More";
+
+//Status
+"online" = "Online";

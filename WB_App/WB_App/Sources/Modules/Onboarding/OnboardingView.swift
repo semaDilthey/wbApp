@@ -9,6 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    @ObservedObject var router: Router = Router.shared
+    
     @State var isSheetPresented = false
     
     var body: some View {
@@ -33,7 +35,7 @@ private extension OnboardingView {
                 .padding(.bottom, UIConstants.Padding.imageBottom)
                 .padding(.horizontal, UIConstants.Padding.imageHorizontal)
             Text(WBKeys.Onboarding.title)
-                .font(WBFont.heading2.font)
+                .font(.wbFont(.heading2))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, UIConstants.Padding.textHor)
             Spacer()
@@ -47,14 +49,14 @@ private extension OnboardingView {
     }
     
     var startButton: some View {
-        ProceedButton(text: WBKeys.Onboarding.start) {
+        ProceedButton(state: .initial ,text: WBKeys.Onboarding.start) {
             isSheetPresented = true
         }
             .sheet(isPresented: $isSheetPresented,
                    onDismiss: {
                 print("Sheet was dismissed")
             }, content: {
-                TabsView()
+                    TabsView()
             })
     }
     

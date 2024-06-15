@@ -7,65 +7,79 @@
 
 import SwiftUI
 
-enum Tabs: CaseIterable, Hashable {
-    case contacts
-    case chats
-    case more
-    
-    var iconName: String {
-        switch self {
-        case .contacts:
-            return WBIcons.Tabs.contacts
-        case .chats:
-            return WBIcons.Tabs.chats
-        case .more:
-            return WBIcons.Tabs.more
-        }
-    }
-    
-    var title: String {
-        switch self {
-        case .contacts:
-            return WBKeys.Tabs.contacts
-        case .chats:
-            return WBKeys.Tabs.chats
-        case .more:
-            return WBKeys.Tabs.more
-        }
-    }
-
-    @ViewBuilder
-    var view: some View {
-        switch self {
-        case .contacts:
-            ContactsScreen()
-        case .chats:
-            ChatsScreen()
-        case .more:
-            MoreScreen()
-        }
-    }
-}
-
-
 struct TabsView: View {
     
-    @State var selectedTab : Tabs = .chats
+    @StateObject var router = Router.shared
     
     var body: some View {
-        TabView(selection: $selectedTab) {
+
+        TabView(selection: $router.selectedTab) {
             ForEach(Tabs.allCases, id: \.self) { tab in
-                tab.view
-                    .tabItem {
-                        Image(tab.iconName)
-                        Text(tab.title)
+                NavigationStack(path: $router.path) {
+                tabView(tab)
+                    .navigationDestination(for: Route.self) { destination in
+                        switch destination {
+                        case .contactDetails(let contact):
+                            DetailedContactScreen(fullName: (contact.name, contact.surname))
+                                .navigationBarBackButtonHidden(true)
+                                .withNavigationView(type: .return(
+                                    title: router.selectedTab.title,
+                                    router: router))
+                        default:
+                            OnboardingView()
+                        }
                     }
-                    .tag(tab)
+                    }
+                }
             }
+            .background(Color.Neutural.BG)
+            .tint(Color.Brand.default)
         }
+    
+    init() {
+        configureView()
     }
 }
+
+extension TabsView {
+    
+    private func tabView(_ tab: Tabs) -> some View {
+        tab.view
+            .withNavigationView(type: .rightButtonsAndTitle(title: tab.title,
+                                                            buttons: setButtons(tab)))
+            .tabItem {
+                Image(tab.iconName)
+                    .foregroundStyle(Color.Neutural.text)
+            }
+            .tag(tab)
+    }
+    
+    private func configureView() {
+        let appearance = UITabBar.appearance()
+        appearance.unselectedItemTintColor = .black
+    }
+    
+    private func setButtons(_ tab: Tabs) -> [ButtonModel] {
+        switch tab {
+        case .contacts:
+            return [
+                ButtonModel(imageName: tab.navBarIcon, action: {})
+            ]
+        case .chats:
+            return [
+                ButtonModel(imageName: tab.navBarIcon, action: {})
+            ]
+        case .more:
+            return [
+                ButtonModel(imageName: tab.navBarIcon, action: {})
+            ]
+        }
+    }
+    
+}
+
 
 #Preview {
     TabsView()
 }
+
