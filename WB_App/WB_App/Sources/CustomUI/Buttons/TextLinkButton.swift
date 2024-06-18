@@ -17,8 +17,8 @@ struct TextLinkButton: View {
             action()
         } label: {
             Text(text)
-                .font(WBFont.body1.font)
-                .colorMultiply(.black)
+                .font(.wbFont(.body1))
+                .colorMultiply(Color.Neutural.text)
         }
     }
     

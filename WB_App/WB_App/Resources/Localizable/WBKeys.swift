@@ -22,4 +22,8 @@ enum LocalizableKeys {
         static let chats = "tab_chats".localized
         static let more = "tab_more".localized
     }
+    
+    enum Status {
+        static let online = "online".localized
+    }
 }

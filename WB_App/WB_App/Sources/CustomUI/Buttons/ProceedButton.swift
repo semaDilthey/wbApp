@@ -9,25 +9,37 @@ import SwiftUI
 
 struct ProceedButton: View {
     
+    enum ButtonState {
+        case initial, disabled
+    }
+    
+    @State var state: ButtonState
     var text: String
     var action: () -> Void
     
     var body: some View {
         Button {
-            action()
+            
+            if state == .initial {
+                action()
+            }
         } label: {
             Text(text)
-                .font(WBFont.subheading2.font)
+                .font(.wbFont(.subheading2))
                 .foregroundColor(.white)
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(Color.brand)
+                .background(state == .initial ? Color.Brand.default : Color.Brand.default.opacity(0.5))
                 .cornerRadius(UIConstants.radius)
         }
         .padding(.horizontal, C.Offset.big)
     }
     
-    init(text: String, action: @escaping () -> Void = {}) {
+    init(state: ButtonState = .initial,
+         text: String,
+         action: @escaping () -> Void = {})
+    {
+        self.state = state
         self.text = text
         self.action = action
     }
