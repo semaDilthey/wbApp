@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum ColorGradient {
-    case variant1, variant2
+    case variant1, variant2, clear
     
     var value : (Color, Color) {
         let start: Color
@@ -20,6 +20,9 @@ enum ColorGradient {
         case .variant2:
             start = Color(red: 236/255, green: 158/255, blue: 255/255, opacity: 1)
             end = Color(red: 95/255, green: 46/255, blue: 234/255, opacity: 1)
+        case .clear:
+            start = Color.clear
+            end = Color.clear
         }
         return (start, end)
     }

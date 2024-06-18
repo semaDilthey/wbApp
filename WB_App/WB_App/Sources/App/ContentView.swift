@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @ObservedObject var router = Router.shared
-    
+        
     var body: some View {
-        OnboardingView()
+       OnboardingView()
     }
 }
 
@@ -22,7 +20,7 @@ struct ContentView: View {
 
 struct StartView: View {
     
-    @EnvironmentObject var router: Router
+//    @EnvironmentObject var router: Router
     let manager = AppStorageManager.shared
     
     var body: some View {
@@ -32,9 +30,9 @@ struct StartView: View {
         .padding()
         .onAppear {
             if manager.isNewUser() {
-                router.navigateTo(Route.onboarding)
+//                router.navigateTo(Route.onboarding)
             } else {
-                router.navigateTo(Route.tabs)
+//                router.navigateTo(Route.tabs)
             }
         }
         .onAppear {

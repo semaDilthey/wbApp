@@ -7,25 +7,13 @@
 
 import SwiftUI
 
-enum Tabs: CaseIterable, Hashable {
+enum Tabs: Int, CaseIterable, Hashable {
     case contacts
     case chats
     case more
 }
 
 extension Tabs {
-    
-    @ViewBuilder
-    var view: some View {
-        switch self {
-        case .contacts:
-            ContactsListScreen(viewModel: ContactsListViewModel(router: Router.shared))
-        case .chats:
-            ChatsScreen()
-        case .more:
-            MoreScreen()
-        }
-    }
     
     var iconName: String {
         switch self {

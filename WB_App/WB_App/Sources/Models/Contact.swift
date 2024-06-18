@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Contact: Hashable {
+struct Contact: Hashable, Identifiable {
     var id = UUID().uuidString
     var name: String
     var surname: String
@@ -22,9 +22,10 @@ extension Contact {
     static func makeMock() -> Self {
         let names = ["Pasha", "Nick", "Kaosyan"]
         let surnames = ["Grigoryan", "Altman", "Zuckerberg", "Sena"]
-        return .init(name: names.randomElement()!, 
+        let pics = ["1","2","3","4","5","6","7"]
+        return .init(name: names.randomElement()!,
                      surname: surnames.randomElement()!,
-                     photo: "123",
+                     photo: pics.randomElement()!,
                      status: .online,
                      hasStory: [true, false].randomElement()!)
     }

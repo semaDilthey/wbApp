@@ -10,12 +10,15 @@ import SwiftUI
 struct ContactPhoto : View {
     
     var contact: Contact
+    var size: CGSize
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
             photoImage
             if contact.status == .online {
-                onlineIndicator
+                if size.width < 60 {
+                    onlineIndicator
+                }
             }
         }
     }
@@ -25,15 +28,24 @@ extension ContactPhoto {
     
     private var photoImage : some View {
         ZStack{
-            if contact.hasStory {
+            if size.width < 60 {
                 storyOverlayCircle
             }
-        Image(contact.photo)
-            .resizable()
-            .scaledToFill()
-            .frame(width: UIConstants.photoSize,
-                   height: UIConstants.photoSize)
-            .clipShape(.rect(cornerRadius: UIConstants.photoRadiis))
+
+            if size.width >  60 {
+                Image(contact.photo)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(.circle)
+                    .padding(.horizontal, 86)
+            } else {
+                Image(contact.photo)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIConstants.photoSize,
+                           height: UIConstants.photoSize)
+                    .clipShape(.rect(cornerRadius: UIConstants.photoRadiis))
+            }
         }
     }
     
@@ -51,7 +63,7 @@ extension ContactPhoto {
     private var storyOverlayCircle : some View {
         ZStack {
             Rectangle()
-                .fill(Color.gradient(.variant2))
+                .fill(contact.hasStory ? Color.gradient(.variant2) : Color.gradient(.clear))
                 .frame(width: UIConstants.storyCircleSize,
                        height: UIConstants.storyCircleSize)
                 .clipShape(.rect(cornerRadius: UIConstants.storyCircleRadius))
@@ -65,7 +77,8 @@ extension ContactPhoto {
 }
 
 #Preview {
-    ContactPhoto(contact: .init(name: "", surname: "", photo: "123", status: .online, hasStory: true))
+    ContactPhoto(contact: .init(name: "", surname: "", photo: "123", status: .online, hasStory: true), 
+                 size: CGSize(width: 48, height: 48))
 }
 
 fileprivate enum UIConstants {

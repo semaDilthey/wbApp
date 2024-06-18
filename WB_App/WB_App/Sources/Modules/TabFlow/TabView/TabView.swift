@@ -9,29 +9,17 @@ import SwiftUI
 
 struct TabsView: View {
     
-    @StateObject var router = Router.shared
+    @State private var selectedTab : Tabs = .contacts
+    @State private var contactsDTO : ContactsTransitionDTO = .init()
     
     var body: some View {
 
-        TabView(selection: $router.selectedTab) {
+        TabView(selection: $selectedTab) {
+            
             ForEach(Tabs.allCases, id: \.self) { tab in
-                NavigationStack(path: $router.path) {
                 tabView(tab)
-                    .navigationDestination(for: Route.self) { destination in
-                        switch destination {
-                        case .contactDetails(let contact):
-                            DetailedContactScreen(fullName: (contact.name, contact.surname))
-                                .navigationBarBackButtonHidden(true)
-                                .withNavigationView(type: .return(
-                                    title: router.selectedTab.title,
-                                    router: router))
-                        default:
-                            OnboardingView()
-                        }
-                    }
                     }
                 }
-            }
             .background(Color.Neutural.BG)
             .tint(Color.Brand.default)
         }
@@ -44,14 +32,45 @@ struct TabsView: View {
 extension TabsView {
     
     private func tabView(_ tab: Tabs) -> some View {
-        tab.view
-            .withNavigationView(type: .rightButtonsAndTitle(title: tab.title,
-                                                            buttons: setButtons(tab)))
-            .tabItem {
-                Image(tab.iconName)
-                    .foregroundStyle(Color.Neutural.text)
-            }
-            .tag(tab)
+        switch tab {
+        case .contacts:
+            return AnyView(NavigationRouterView(routeType: ContactsRoute.self, contactsDTO: $contactsDTO) {
+                ContactsListScreen(animationDTO: $contactsDTO)
+                    .navBarTitle(title: tab.title)
+                    .navBarTrailingButtons(buttons: setButtons(tab))
+                    }
+                .tabItem {
+                    Image(tab.iconName)
+                        .foregroundStyle(Color.Neutural.text)
+                }
+                .tag(tab)
+                .setContactsTransition(DTO: contactsDTO, type: .first)
+                )
+        case .chats:
+            return AnyView(NavigationRouterView(routeType: ChatsRoute.self) {
+                ChatsScreen()
+                    .navBarTitle(title: tab.title)
+                    .navBarTrailingButtons(buttons: setButtons(tab))
+                    }
+                .tabItem {
+                    Image(tab.iconName)
+                        .foregroundStyle(Color.Neutural.text)
+                }
+                .tag(tab)
+            )
+        case .more:
+            return AnyView(NavigationRouterView(routeType: MoreRoute.self) {
+                MoreScreen()
+                    .navBarTitle(title: tab.title)
+                    .navBarTrailingButtons(buttons: setButtons(tab))
+                    }
+                .tabItem {
+                    Image(tab.iconName)
+                        .foregroundStyle(Color.Neutural.text)
+                }
+                .tag(tab)
+            )
+        }
     }
     
     private func configureView() {

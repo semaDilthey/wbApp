@@ -15,12 +15,12 @@ protocol IContactsListViewModel: ObservableObject {
 
 final class ContactsListViewModel {
     
-    var router : Router
+//    var router : Router
     
     @Published private var contacts : [Contact] = .init()
     
-    init(router: Router) {
-        self.router = router
+    init(/*router: Router*/) {
+//        self.router = router
         makeMockContacts()
     }
 }
@@ -28,7 +28,7 @@ final class ContactsListViewModel {
 extension ContactsListViewModel : IContactsListViewModel {
     
     func presentContactDetails(_ contact: Contact) {
-        router.navigateTo(.contactDetails(contact))
+//        router.navigateTo(.contactDetails(contact))
     }
     
     func getContacts() -> [Contact] {

@@ -7,34 +7,23 @@
 
 import SwiftUI
 
-
-enum Route: Hashable {
-     case onboarding
-     case auth
-     case tabs
-     case contactDetails(Contact)
- }
- 
-
-final class Router: ObservableObject {
-    
-    static let shared = Router()
-    
-    private init() {}
+final class Router<Route: Hashable>: ObservableObject {
         
-    @Published var selectedTab : Tabs = .contacts
-    @Published var path : NavigationPath = .init()
+    @Binding var path: [Route]
     
-    func navigateTo(_ route: Route) {
+    init(path: Binding<[Route]>) {
+        self._path = path
+    }
+    
+    func push(_ route: Route) {
         path.append(route)
     }
     
-    func backToRoot() {
-        path.removeLast(path.count)
+    func pop() {
+        _ = path.popLast()
     }
-        
-    func back() {
-        path.removeLast()
+    
+    func popToRoot() {
+        path.removeAll()
     }
-
 }

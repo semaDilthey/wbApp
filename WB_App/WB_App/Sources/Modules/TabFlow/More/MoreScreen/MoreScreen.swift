@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MoreScreen: View {
-    @EnvironmentObject var router : Router
+//    @EnvironmentObject var router : Router
 
     var body: some View {
         Text("MoreScreen")

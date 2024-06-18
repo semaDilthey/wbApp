@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatsScreen: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var router : Router
+//    @EnvironmentObject var router : Router
 
     
     var body: some View {

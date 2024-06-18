@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContactRow: View {
+    
     let contact: Contact
     
     var body: some View {
+       
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                ContactPhoto(contact: contact)
+                ContactPhoto(contact: contact, size: CGSize(width: 48, height: 48))
+                    .anchorPreference(key: MAnchoerKey.self,
+                                      value: .bounds,
+                                      transform: { anchor in
+                        return [contact.id: anchor]
+                    })
                 Spacer()
                     .frame(width: C.Offset.medium)
                 VStack(alignment: .leading) {
@@ -45,6 +52,17 @@ extension ContactRow {
     }
 }
 
-#Preview {
-    ContactRow(contact: Contact.makeMock())
+extension ContactsListScreen {
+    func statusText(_ status: Status) -> String {
+        switch status {
+        case .online:
+            return WBKeys.Status.online
+        case .offline(let lastOnline):
+            return lastOnline
+        }
+    }
 }
+
+//#Preview {
+//    ContactRow(contact: Contact.makeMock())
+//}

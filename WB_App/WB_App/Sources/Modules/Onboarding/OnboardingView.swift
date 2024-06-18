@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     
-    @ObservedObject var router: Router = Router.shared
+//    @ObservedObject var router: Router = Router.shared
     
     @State var isSheetPresented = false
     

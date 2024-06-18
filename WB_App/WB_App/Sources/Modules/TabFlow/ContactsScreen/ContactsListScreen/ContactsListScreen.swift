@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContactsListScreen: View {
     
+    @EnvironmentObject var router: Router<ContactsRoute>
+    @StateObject private var viewModel : ContactsListViewModel = ContactsListViewModel()
+
     @State var searchText = ""
-    @StateObject private var viewModel : ContactsListViewModel
     
-    init(viewModel: ContactsListViewModel) {
-        self._viewModel = StateObject(wrappedValue: viewModel)
-    }
+    @Binding var animationDTO : ContactsTransitionDTO
     
     var body: some View {
-         VStack {
-             searchView
-             listView
-         }
+            VStack {
+                searchView
+                listView
+        }
      }
     
 }
@@ -35,20 +35,20 @@ extension ContactsListScreen {
     var listView : some View {
         List {
             ForEach(viewModel.getContacts(), id: \.self) { contact in
-                ContactRow(contact: contact)
-                    .onTapGesture {
-                            viewModel.presentContactDetails(contact)
-                    }
-                    .transition(.iris)
-                .listRowSeparator(.hidden)
+                Button(action: {
+                    animationDTO.selectedContact = contact
+                    animationDTO.pushView.toggle()
+                    router.push(.contactPreview)
+                }, label: {
+                    ContactRow(contact: contact)
+                })
+
             }
+            .listRowSeparator(.hidden)
         }
+        .setContactsTransition(DTO: animationDTO, type: .second, data: viewModel.getContacts())
         .listStyle(.plain)
         .font(.wbFont(.body1))
     }
-}
-
-#Preview {
-    ContactsListScreen(viewModel: ContactsListViewModel(router: Router.shared))
 }
 
