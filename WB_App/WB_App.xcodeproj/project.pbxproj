@@ -82,6 +82,7 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3F5A0B112C22D0F600340C8A /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3F5A0B082C22000900340C8A /* HomeWork4_Bank */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -343,6 +345,14 @@
 				3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */,
 			);
 			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		3F5A0B082C22000900340C8A /* HomeWork4_Bank */ = {
+			isa = PBXGroup;
+			children = (
+				3F5A0B112C22D0F600340C8A /* Bank.playground */,
+			);
+			path = HomeWork4_Bank;
 			sourceTree = "<group>";
 		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
