@@ -17,7 +17,7 @@ struct DatePickerInterporarableView: View {
             datePicker
             langPicker
             spellingOutToggle
-            datesTextList(dates: dateModel.getDates())
+            datesTextList(dates: RelativeDay.getDates(model: dateModel))
         }
         .font(.wbFont(.body1))
     }

@@ -35,4 +35,20 @@ enum RelativeDay: Int, CaseIterable {
     }
 }
 
+extension RelativeDay {
+    
+    static func getDates(model: DateInterporarable) -> [String] {
+        return RelativeDay.allCases.map { relativeDay in
+            let calculatedDate = Calendar.current.date(byAdding: .day,
+                                                       value: relativeDay.rawValue,
+                                                       to: model.selectedDate)!
+            if model.isSpellingOut {
+                return "\(relativeDay.description(locale: model.selectedLocale))): \n\(spellOut: model.selectedDate, locale: model.selectedLocale)"
+            } else {
+                return "\(relativeDay.description(locale: model.selectedLocale))): \n\(calculatedDate, locale: model.selectedLocale, style: .long, timeStyle: .short)"
+            }
+        }
+    }
+}
+
 
