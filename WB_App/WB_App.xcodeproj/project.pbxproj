@@ -38,6 +38,11 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3F9860302C2C0F390036B1B4 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F98602F2C2C0F390036B1B4 /* DateModel.swift */; };
+		3FAA886D2C29894300E6BD8E /* DatePickerInterporarableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA886C2C29894300E6BD8E /* DatePickerInterporarableView.swift */; };
+		3FAA886F2C29946100E6BD8E /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA886E2C29946100E6BD8E /* Languages.swift */; };
+		3FAA88712C299A4700E6BD8E /* RelativeDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA88702C299A4700E6BD8E /* RelativeDays.swift */; };
+		3FAA88732C299A8B00E6BD8E /* StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAA88722C299A8B00E6BD8E /* StringInterpolation.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +87,11 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3F98602F2C2C0F390036B1B4 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		3FAA886C2C29894300E6BD8E /* DatePickerInterporarableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerInterporarableView.swift; sourceTree = "<group>"; };
+		3FAA886E2C29946100E6BD8E /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		3FAA88702C299A4700E6BD8E /* RelativeDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeDays.swift; sourceTree = "<group>"; };
+		3FAA88722C299A8B00E6BD8E /* StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolation.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3FAA886B2C29891E00E6BD8E /* lesson_6 */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -345,6 +356,18 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3FAA886B2C29891E00E6BD8E /* lesson_6 */ = {
+			isa = PBXGroup;
+			children = (
+				3FAA886C2C29894300E6BD8E /* DatePickerInterporarableView.swift */,
+				3FAA886E2C29946100E6BD8E /* Languages.swift */,
+				3FAA88702C299A4700E6BD8E /* RelativeDays.swift */,
+				3FAA88722C299A8B00E6BD8E /* StringInterpolation.swift */,
+				3F98602F2C2C0F390036B1B4 /* DateModel.swift */,
+			);
+			path = lesson_6;
+			sourceTree = "<group>";
+		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +481,7 @@
 				3F28327F2C2093880039F5B6 /* NavigationRouterView.swift in Sources */,
 				3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */,
 				3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */,
+				3FAA88712C299A4700E6BD8E /* RelativeDays.swift in Sources */,
 				3F1B74492C10AE0C00210E1A /* Icons.swift in Sources */,
 				3FE1CEA52C1C90A700792E6C /* DetailedContactViewModel.swift in Sources */,
 				3FE1CEAB2C1CD60700792E6C /* WBNavBar.swift in Sources */,
@@ -469,13 +493,16 @@
 				3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */,
 				3F1B74122C0FC1EA00210E1A /* ContentView.swift in Sources */,
 				3F1B74452C10AAB100210E1A /* String+Extension.swift in Sources */,
+				3FAA886F2C29946100E6BD8E /* Languages.swift in Sources */,
 				3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */,
 				3F1B741E2C108D8600210E1A /* ProceedButton.swift in Sources */,
 				3F1B746A2C1360E200210E1A /* ContactPhoto.swift in Sources */,
 				3F1B742E2C109F6C00210E1A /* OnboardingView.swift in Sources */,
+				3FAA88732C299A8B00E6BD8E /* StringInterpolation.swift in Sources */,
 				3F29C19F2C1A2E0C00C98B64 /* SearchView.swift in Sources */,
 				3F1B745A2C134CE000210E1A /* ContactsListViewModel.swift in Sources */,
 				3F2832812C2093A30039F5B6 /* Routes.swift in Sources */,
+				3F9860302C2C0F390036B1B4 /* DateModel.swift in Sources */,
 				3F1B74382C10A44200210E1A /* ChatsScreen.swift in Sources */,
 				3F1B74672C135CB200210E1A /* ContactRow.swift in Sources */,
 				3F29C1A52C1A44E900C98B64 /* Font+Extension.swift in Sources */,
@@ -489,6 +516,7 @@
 				3F1B743A2C10A45000210E1A /* ContactsListScreen.swift in Sources */,
 				3F1B74102C0FC1EA00210E1A /* WBApp.swift in Sources */,
 				3F29C1A32C1A3F0100C98B64 /* Color+Extension.swift in Sources */,
+				3FAA886D2C29894300E6BD8E /* DatePickerInterporarableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
