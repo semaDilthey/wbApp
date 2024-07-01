@@ -8,68 +8,54 @@
 import SwiftUI
 
 // Кастомный ScrollView с поддержкой бесконечного скролла
+// Хотелось поиграться понять как оно все тут работает при использовании дженериков
 struct InfiniteScrollView<Content: View, Data: CellDataProvider>: View {
+    
     @State private var items: [Data] = []
+    
     let content: (Data) -> Content
-    let dataForCell: () -> Data
+    let configurationModel: () -> Data
     
     private let column = [GridItem(.adaptive(minimum: .greatestFiniteMagnitude/2, 
-                                             maximum: .greatestFiniteMagnitude))
-                        ]
+                                             maximum: .greatestFiniteMagnitude))]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: column) {
                 ForEach(items, id: \.id) { item in
                     content(item)
+                        .padding()
                         .onAppear {
-                           appendItems(item: item)
+                            withAnimation {
+                                appendItems(item: item)
+                            }
                         }
                 }
             }
-            .onAppear(perform: onAppear)
+            .onAppear(perform: {
+                withAnimation {
+                    onAppear()
+                }
+            })
         }
         .scrollIndicators(.hidden)
     }
 
     private func appendItems(item: Data) {
         if items.last?.id == item.id {
-            items.append(dataForCell())
+            items.append(configurationModel())
         }
     }
     private func onAppear() {
-        items.append(dataForCell())
+        items.append(configurationModel())
     }
 }
 
 #Preview {
     InfiniteScrollView { data in
-        ComplexLayoutCell(data: data)
-    } dataForCell: {
+        ComplexLayoutCell(data: data, layout: .random())
+    } configurationModel: {
         CellData()
     }
 
 }
-
-//
-//struct IninityCellModel {
-//    var id = UUID()
-//    var emoji : String
-//    
-//    init() {
-//        let emojiRange = 0x1F300...0x1F3F0
-//        emoji = String(UnicodeScalar(Array(emojiRange).randomElement()!)!)
-//    }
-//}
-//
-//struct ComplexLayoutCell: View {
-//    var model: IninityCellModel
-//    
-//    var body: some View {
-//        ZStack {
-//            
-//        }
-//    }
-//    
-//    
-//}
