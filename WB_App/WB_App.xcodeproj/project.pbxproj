@@ -28,6 +28,9 @@
 		3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B74642C13585500210E1A /* DetailedContactScreen.swift */; };
 		3F1B74672C135CB200210E1A /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B74662C135CB100210E1A /* ContactRow.swift */; };
 		3F1B746A2C1360E200210E1A /* ContactPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1B74692C1360E200210E1A /* ContactPhoto.swift */; };
+		3F22D9F62C2EA15B00DA54B4 /* InfinityScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9F52C2EA15B00DA54B4 /* InfinityScrollView.swift */; };
+		3F22D9F82C2EC5C000DA54B4 /* ComplexLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9F72C2EC5C000DA54B4 /* ComplexLayoutCell.swift */; };
+		3F22D9FA2C2EC5D900DA54B4 /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F22D9F92C2EC5D900DA54B4 /* CellData.swift */; };
 		3F28327F2C2093880039F5B6 /* NavigationRouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F28327E2C2093880039F5B6 /* NavigationRouterView.swift */; };
 		3F2832812C2093A30039F5B6 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2832802C2093A30039F5B6 /* Routes.swift */; };
 		3F2832832C20A2840039F5B6 /* MAnchoerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2832822C20A2840039F5B6 /* MAnchoerKey.swift */; };
@@ -72,6 +75,9 @@
 		3F1B74642C13585500210E1A /* DetailedContactScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactScreen.swift; sourceTree = "<group>"; };
 		3F1B74662C135CB100210E1A /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		3F1B74692C1360E200210E1A /* ContactPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPhoto.swift; sourceTree = "<group>"; };
+		3F22D9F52C2EA15B00DA54B4 /* InfinityScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityScrollView.swift; sourceTree = "<group>"; };
+		3F22D9F72C2EC5C000DA54B4 /* ComplexLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexLayoutCell.swift; sourceTree = "<group>"; };
+		3F22D9F92C2EC5D900DA54B4 /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		3F28327E2C2093880039F5B6 /* NavigationRouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouterView.swift; sourceTree = "<group>"; };
 		3F2832802C2093A30039F5B6 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		3F2832822C20A2840039F5B6 /* MAnchoerKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAnchoerKey.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3F22D9F42C2EA12800DA54B4 /* L7_ScrollVIew */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -318,6 +325,16 @@
 			path = DetailedContactScreen;
 			sourceTree = "<group>";
 		};
+		3F22D9F42C2EA12800DA54B4 /* L7_ScrollVIew */ = {
+			isa = PBXGroup;
+			children = (
+				3F22D9F52C2EA15B00DA54B4 /* InfinityScrollView.swift */,
+				3F22D9F72C2EC5C000DA54B4 /* ComplexLayoutCell.swift */,
+				3F22D9F92C2EC5D900DA54B4 /* CellData.swift */,
+			);
+			path = L7_ScrollVIew;
+			sourceTree = "<group>";
+		};
 		3F29C19D2C1A2E0400C98B64 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -457,6 +474,7 @@
 				3FE1CEB22C1DD6EE00792E6C /* Transition+Extension.swift in Sources */,
 				3F28327F2C2093880039F5B6 /* NavigationRouterView.swift in Sources */,
 				3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */,
+				3F22D9F62C2EA15B00DA54B4 /* InfinityScrollView.swift in Sources */,
 				3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */,
 				3F1B74492C10AE0C00210E1A /* Icons.swift in Sources */,
 				3FE1CEA52C1C90A700792E6C /* DetailedContactViewModel.swift in Sources */,
@@ -471,6 +489,7 @@
 				3F1B74452C10AAB100210E1A /* String+Extension.swift in Sources */,
 				3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */,
 				3F1B741E2C108D8600210E1A /* ProceedButton.swift in Sources */,
+				3F22D9F82C2EC5C000DA54B4 /* ComplexLayoutCell.swift in Sources */,
 				3F1B746A2C1360E200210E1A /* ContactPhoto.swift in Sources */,
 				3F1B742E2C109F6C00210E1A /* OnboardingView.swift in Sources */,
 				3F29C19F2C1A2E0C00C98B64 /* SearchView.swift in Sources */,
@@ -487,6 +506,7 @@
 				3F1B74362C10A42D00210E1A /* MoreScreen.swift in Sources */,
 				3F1B744B2C10AFD500210E1A /* Constants.swift in Sources */,
 				3F1B743A2C10A45000210E1A /* ContactsListScreen.swift in Sources */,
+				3F22D9FA2C2EC5D900DA54B4 /* CellData.swift in Sources */,
 				3F1B74102C0FC1EA00210E1A /* WBApp.swift in Sources */,
 				3F29C1A32C1A3F0100C98B64 /* Color+Extension.swift in Sources */,
 			);
