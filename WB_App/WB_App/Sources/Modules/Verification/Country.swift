@@ -17,19 +17,15 @@ enum Country: String, CaseIterable {
             "🇷🇺"
         case .bel:
             "🇧🇾"
-        default:
-            "def"
         }
     }
     
-    var prefix: String {
+    var code: String {
         switch self {
         case .ru:
             return "+7"
         case .bel:
             return "+39"
-        default:
-            return "def"
         }
     }
     
@@ -39,8 +35,6 @@ enum Country: String, CaseIterable {
             "000-00-00"
         case .bel:
             "9999-00-000"
-        default:
-            "def"
         }
     }
 }

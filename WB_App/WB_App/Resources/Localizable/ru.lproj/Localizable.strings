@@ -11,6 +11,10 @@
 "agreement" = "Пользовательское соглашение";
 "start_chatting" = "Начать общаться";
 
+//Verification/Auth flow
+"verification_guide_text_heading" = "Введите номер телефона";
+"verification_guide_text_body" = "Мы вышлем код подтверждения на указанный номер";
+
 //Tabs
 "tab_contacts" = "Контакты";
 "tab_chats" = "Чаты";
@@ -18,3 +22,6 @@
 
 //Status
 "online" = "Онлайн";
+
+//Actions
+"continue" = "Продолжить";

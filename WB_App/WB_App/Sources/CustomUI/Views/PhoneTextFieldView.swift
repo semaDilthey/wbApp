@@ -27,7 +27,8 @@ fileprivate struct CountryCodePicker: View {
         Menu {
             Picker("Select country", selection: $selectedCountry) {
                 ForEach(0..<Country.allCases.count, id: \.self) { countryIndex in
-                    Text(Country.allCases[countryIndex].rawValue).tag(Country.allCases[countryIndex])
+                    Text(Country.allCases[countryIndex].rawValue)
+                        .tag(Country.allCases[countryIndex])
                 }
             }
             .pickerStyle(.inline)
@@ -39,12 +40,16 @@ fileprivate struct CountryCodePicker: View {
     var menuLabel: some View {
         HStack {
             Text(selectedCountry.flag)
-            Text(selectedCountry.prefix)
+            Text(selectedCountry.code)
                 .font(.wbFont(.body1))
                 .foregroundStyle(Color.Neutural.disabled)
         }
-        .padding(9.5)
+        .padding(UI.menuLabel.padding)
         .background(Color.Neutural.secondaryBG)
-        .clipShape(.rect(cornerRadius: 4))
+        .clipShape(.rect(cornerRadius: UI.menuLabel.radius))
     }
+}
+
+fileprivate enum UI {
+    static let menuLabel : (padding: CGFloat, radius: CGFloat) = (9.5, 4)
 }

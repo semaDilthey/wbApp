@@ -27,9 +27,13 @@ struct WBTextFieldStyle: TextFieldStyle {
         configuration
             .foregroundColor(.black)
             .tint(.black)
-            .padding(10)
+            .padding(UI.size.padding)
             .background(Color.Neutural.secondaryBG)
-            .cornerRadius(4)
+            .cornerRadius(UI.size.radius)
             .font(.wbFont(.body1))
     }
+}
+
+fileprivate enum UI {
+    static let size : (padding: CGFloat, radius: CGFloat) = (10, 4)
 }

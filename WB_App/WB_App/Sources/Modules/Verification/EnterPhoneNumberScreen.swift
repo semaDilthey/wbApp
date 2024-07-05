@@ -26,25 +26,24 @@ struct EnterPhoneNumberScreen: View {
 
 //MARK: - UI Elements
 extension EnterPhoneNumberScreen {
-    
+
     var guideText: some View {
-        VerificationGuideText(headingText: "Введите номер телефона",
-                              bodyText: "Мы вышлем код подтверждения на указанный номер")
-        .layoutPriority(999)
-        .padding(.top, 99)
+        VerificationGuideText(headingText: WBKeys.Verification.guideHeading,
+                              bodyText: WBKeys.Verification.guideBody)
+        .padding(.top, UI.guideText.top)
         .padding(.horizontal, UI.textHorOffset)
-        .padding(.bottom, 49)
+        .padding(.bottom, UI.guideText.bottom)
     }
     
     var phoneTextField: some View {
         PhoneTextFieldView(selectedCountry: $selectedCountry)
         .padding(.horizontal, UI.textFieldOffset)
-        .padding(.bottom, 69)
+        .padding(.bottom, UI.phoneText)
     }
     
     var continueButton: some View {
         ProceedButton(isProceeding: $isProceeding,
-                      title: .saveButtonText) {
+                      title: WBKeys.Action.continue) {
             tappedSaveButton()
         }
             .padding(.bottom, UI.buttonBottomOffset)
@@ -76,11 +75,11 @@ fileprivate enum UI {
     static let textHorOffset: CGFloat = 42
     static let textFieldOffset: CGFloat = 24
     static let buttonBottomOffset: CGFloat = 60
+    
+    static let guideText : (top: CGFloat, bottom: CGFloat) = (99, 49)
+    static let phoneText : CGFloat = 69
 }
 
-fileprivate extension String {
-    static let saveButtonText = "continue".localized
-}
 
 #Preview {
     EnterPhoneNumberScreen()
