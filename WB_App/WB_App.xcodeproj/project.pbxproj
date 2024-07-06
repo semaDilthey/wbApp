@@ -44,6 +44,7 @@
 		3FC29B102C36FA7900B697F2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0F2C36FA7900B697F2 /* View+Extension.swift */; };
 		3FC29B122C3719A500B697F2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B112C3719A500B697F2 /* Country.swift */; };
 		3FC29B142C3719C600B697F2 /* PhoneTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B132C3719C600B697F2 /* PhoneTextFieldView.swift */; };
+		3FC29B182C384EA200B697F2 /* VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -94,6 +95,7 @@
 		3FC29B0F2C36FA7900B697F2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		3FC29B112C3719A500B697F2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		3FC29B132C3719C600B697F2 /* PhoneTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextFieldView.swift; sourceTree = "<group>"; };
+		3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeScreen.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				3FC29B0A2C36ECD000B697F2 /* CustomViews */,
 				3FC29B112C3719A500B697F2 /* Country.swift */,
 				3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */,
+				3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */,
 			);
 			path = Verification;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				3FC29B102C36FA7900B697F2 /* View+Extension.swift in Sources */,
 				3F1B74472C10AAD700210E1A /* WBKeys.swift in Sources */,
 				3F1B745C2C134E9100210E1A /* Contact.swift in Sources */,
+				3FC29B182C384EA200B697F2 /* VerificationCodeScreen.swift in Sources */,
 				3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */,
 				3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */,
 				3F1B74122C0FC1EA00210E1A /* ContentView.swift in Sources */,
