@@ -11,7 +11,12 @@ import SwiftUI
 struct WBApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            InfiniteScrollView { data in
+                ComplexLayoutCell(data: data, layout: LayoutType.random())
+            } configurationModel: {
+                CellData()
+            }
         }
     }
 }
