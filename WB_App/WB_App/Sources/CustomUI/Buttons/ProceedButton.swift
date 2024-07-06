@@ -8,47 +8,67 @@
 import SwiftUI
 
 struct ProceedButton: View {
-    
-    enum ButtonState {
-        case initial, disabled
-    }
-    
-    @State var state: ButtonState
-    var text: String
-    var action: () -> Void
-    
+        
+    @Binding var isProceeding : Bool
+    var title: String
+    var action: () async -> Void
+
     var body: some View {
         Button {
-            
-            if state == .initial {
-                action()
-            }
+            buttonPressed()
         } label: {
-            Text(text)
-                .font(.wbFont(.subheading2))
-                .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(state == .initial ? Color.Brand.default : Color.Brand.default.opacity(0.5))
-                .cornerRadius(UIConstants.radius)
+            buttonBody
         }
-        .padding(.horizontal, C.Offset.big)
+        .allowsHitTesting(isProceeding ? false : true)
+        .buttonStyle(ScaleButtonStyle())
     }
     
-    init(state: ButtonState = .initial,
-         text: String,
-         action: @escaping () -> Void = {})
+    init(isProceeding: Binding<Bool>? = nil,
+         title: String,
+         action: @escaping () -> Void)
     {
-        self.state = state
-        self.text = text
+        self._isProceeding = (isProceeding != nil) ? isProceeding! : .constant(false)
+        self.title = title
         self.action = action
+    }
+    
+    private func buttonPressed() {
+        
+        Task {
+            await action()
+        }
     }
 }
 
-#Preview {
-    ProceedButton(text: "Начать общаться", action: {})
+extension ProceedButton {
+    
+    var buttonBody: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: UIConstants.radius)
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .padding()
+                .foregroundStyle(!isProceeding ? Color.Brand.default : Color.Brand.default.opacity(0.5))
+            
+            switch isProceeding {
+            case true:
+                ProgressView()
+                    .progressViewStyle(.circular)
+            case false:
+                Text(title)
+                    .font(.wbFont(.subheading2))
+                    .foregroundColor(.white)
+            }
+        }
+    }
 }
 
 fileprivate enum UIConstants {
     static let radius: CGFloat = 30
+}
+
+struct ScaleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.95 : 1)
+    }
 }
