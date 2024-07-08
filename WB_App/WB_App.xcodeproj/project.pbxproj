@@ -38,6 +38,7 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3FA2E06A2C399FD700D7D380 /* OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */; };
 		3FC29B092C36EAC900B697F2 /* EnterPhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */; };
 		3FC29B0C2C36ECE600B697F2 /* VerificationGuideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0B2C36ECE600B697F2 /* VerificationGuideText.swift */; };
 		3FC29B0E2C36F57100B697F2 /* WBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0D2C36F57100B697F2 /* WBTextField.swift */; };
@@ -89,6 +90,7 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldView.swift; sourceTree = "<group>"; };
 		3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberScreen.swift; sourceTree = "<group>"; };
 		3FC29B0B2C36ECE600B697F2 /* VerificationGuideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationGuideText.swift; sourceTree = "<group>"; };
 		3FC29B0D2C36F57100B697F2 /* WBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTextField.swift; sourceTree = "<group>"; };
@@ -363,13 +365,30 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3F7BA1ED2C3C1F8B00CEF916 /* EnterPhoneNumberScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */,
+			);
+			path = EnterPhoneNumberScreen;
+			sourceTree = "<group>";
+		};
+		3F7BA1EE2C3C1FA200CEF916 /* VerificationCodeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */,
+				3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */,
+			);
+			path = VerificationCodeScreen;
+			sourceTree = "<group>";
+		};
 		3FC29B072C36E9FC00B697F2 /* Verification */ = {
 			isa = PBXGroup;
 			children = (
 				3FC29B0A2C36ECD000B697F2 /* CustomViews */,
 				3FC29B112C3719A500B697F2 /* Country.swift */,
-				3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */,
-				3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */,
+				3F7BA1ED2C3C1F8B00CEF916 /* EnterPhoneNumberScreen */,
+				3F7BA1EE2C3C1FA200CEF916 /* VerificationCodeScreen */,
 			);
 			path = Verification;
 			sourceTree = "<group>";
@@ -504,6 +523,7 @@
 				3FC29B102C36FA7900B697F2 /* View+Extension.swift in Sources */,
 				3F1B74472C10AAD700210E1A /* WBKeys.swift in Sources */,
 				3F1B745C2C134E9100210E1A /* Contact.swift in Sources */,
+				3FA2E06A2C399FD700D7D380 /* OtpFormFieldView.swift in Sources */,
 				3FC29B182C384EA200B697F2 /* VerificationCodeScreen.swift in Sources */,
 				3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */,
 				3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */,

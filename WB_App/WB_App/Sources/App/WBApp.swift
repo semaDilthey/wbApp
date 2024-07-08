@@ -11,7 +11,8 @@ import SwiftUI
 struct WBApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            VerificationCodeScreen(phoneNumber: "+79676155522")
         }
     }
 }
