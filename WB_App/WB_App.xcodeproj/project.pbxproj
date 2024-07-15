@@ -82,6 +82,10 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3F9CE3AF2C455FAD00DE0323 /* hash().playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "hash().playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3F9CE3B02C45615A00DE0323 /* CustomStringHasher.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CustomStringHasher.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3F9CE3B12C456D4800DE0323 /* SetOperations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SetOperations.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3F9CE3B22C45732300DE0323 /* DictionaryOperations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DictionaryOperations.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CE3AA2C455F3F00DE0323 /* HW11 */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -343,6 +348,49 @@
 				3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */,
 			);
 			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
+		3F9CE3AA2C455F3F00DE0323 /* HW11 */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CE3AE2C455F9200DE0323 /* 4. dictionary */,
+				3F9CE3AD2C455F8900DE0323 /* 3. set */,
+				3F9CE3AC2C455F7E00DE0323 /* 2. strings hasher */,
+				3F9CE3AB2C455F5100DE0323 /* 1. hash() */,
+			);
+			path = HW11;
+			sourceTree = "<group>";
+		};
+		3F9CE3AB2C455F5100DE0323 /* 1. hash() */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CE3AF2C455FAD00DE0323 /* hash().playground */,
+			);
+			path = "1. hash()";
+			sourceTree = "<group>";
+		};
+		3F9CE3AC2C455F7E00DE0323 /* 2. strings hasher */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CE3B02C45615A00DE0323 /* CustomStringHasher.playground */,
+			);
+			path = "2. strings hasher";
+			sourceTree = "<group>";
+		};
+		3F9CE3AD2C455F8900DE0323 /* 3. set */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CE3B12C456D4800DE0323 /* SetOperations.playground */,
+			);
+			path = "3. set";
+			sourceTree = "<group>";
+		};
+		3F9CE3AE2C455F9200DE0323 /* 4. dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CE3B22C45732300DE0323 /* DictionaryOperations.playground */,
+			);
+			path = "4. dictionary";
 			sourceTree = "<group>";
 		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
