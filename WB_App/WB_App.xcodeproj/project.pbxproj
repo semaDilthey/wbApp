@@ -38,14 +38,19 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
-		3FA2E06A2C399FD700D7D380 /* OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */; };
+		3F9CE3B42C457EE100DE0323 /* 1.1 VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE3B32C457EE100DE0323 /* 1.1 VerificationModel.swift */; };
+		3F9CE3B62C4582EA00DE0323 /* OtpNodeLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE3B52C4582EA00DE0323 /* OtpNodeLinkedList.swift */; };
+		3F9CE3B82C45868F00DE0323 /* 3. OtpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE3B72C45868F00DE0323 /* 3. OtpCell.swift */; };
+		3F9CE3BA2C4586C800DE0323 /* 4. PinsLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE3B92C4586C800DE0323 /* 4. PinsLinkedList.swift */; };
+		3F9CE3BC2C45929500DE0323 /* OtpFormFieldViewLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CE3BB2C45929500DE0323 /* OtpFormFieldViewLegacy.swift */; };
+		3FA2E06A2C399FD700D7D380 /* 2. OtpFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2E0692C399FD700D7D380 /* 2. OtpFormFieldView.swift */; };
 		3FC29B092C36EAC900B697F2 /* EnterPhoneNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */; };
 		3FC29B0C2C36ECE600B697F2 /* VerificationGuideText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0B2C36ECE600B697F2 /* VerificationGuideText.swift */; };
 		3FC29B0E2C36F57100B697F2 /* WBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0D2C36F57100B697F2 /* WBTextField.swift */; };
 		3FC29B102C36FA7900B697F2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B0F2C36FA7900B697F2 /* View+Extension.swift */; };
 		3FC29B122C3719A500B697F2 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B112C3719A500B697F2 /* Country.swift */; };
 		3FC29B142C3719C600B697F2 /* PhoneTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B132C3719C600B697F2 /* PhoneTextFieldView.swift */; };
-		3FC29B182C384EA200B697F2 /* VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */; };
+		3FC29B182C384EA200B697F2 /* 1. VerificationCodeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC29B172C384EA200B697F2 /* 1. VerificationCodeScreen.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -90,14 +95,19 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
-		3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldView.swift; sourceTree = "<group>"; };
+		3F9CE3B32C457EE100DE0323 /* 1.1 VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.1 VerificationModel.swift"; sourceTree = "<group>"; };
+		3F9CE3B52C4582EA00DE0323 /* OtpNodeLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpNodeLinkedList.swift; sourceTree = "<group>"; };
+		3F9CE3B72C45868F00DE0323 /* 3. OtpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3. OtpCell.swift"; sourceTree = "<group>"; };
+		3F9CE3B92C4586C800DE0323 /* 4. PinsLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4. PinsLinkedList.swift"; sourceTree = "<group>"; };
+		3F9CE3BB2C45929500DE0323 /* OtpFormFieldViewLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpFormFieldViewLegacy.swift; sourceTree = "<group>"; };
+		3FA2E0692C399FD700D7D380 /* 2. OtpFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2. OtpFormFieldView.swift"; sourceTree = "<group>"; };
 		3FC29B082C36EAC900B697F2 /* EnterPhoneNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberScreen.swift; sourceTree = "<group>"; };
 		3FC29B0B2C36ECE600B697F2 /* VerificationGuideText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationGuideText.swift; sourceTree = "<group>"; };
 		3FC29B0D2C36F57100B697F2 /* WBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTextField.swift; sourceTree = "<group>"; };
 		3FC29B0F2C36FA7900B697F2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		3FC29B112C3719A500B697F2 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		3FC29B132C3719C600B697F2 /* PhoneTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextFieldView.swift; sourceTree = "<group>"; };
-		3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeScreen.swift; sourceTree = "<group>"; };
+		3FC29B172C384EA200B697F2 /* 1. VerificationCodeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. VerificationCodeScreen.swift"; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -376,8 +386,13 @@
 		3F7BA1EE2C3C1FA200CEF916 /* VerificationCodeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				3FC29B172C384EA200B697F2 /* VerificationCodeScreen.swift */,
-				3FA2E0692C399FD700D7D380 /* OtpFormFieldView.swift */,
+				3FC29B172C384EA200B697F2 /* 1. VerificationCodeScreen.swift */,
+				3FA2E0692C399FD700D7D380 /* 2. OtpFormFieldView.swift */,
+				3F9CE3B92C4586C800DE0323 /* 4. PinsLinkedList.swift */,
+				3F9CE3BB2C45929500DE0323 /* OtpFormFieldViewLegacy.swift */,
+				3F9CE3B72C45868F00DE0323 /* 3. OtpCell.swift */,
+				3F9CE3B32C457EE100DE0323 /* 1.1 VerificationModel.swift */,
+				3F9CE3B52C4582EA00DE0323 /* OtpNodeLinkedList.swift */,
 			);
 			path = VerificationCodeScreen;
 			sourceTree = "<group>";
@@ -517,14 +532,15 @@
 				3F1B74492C10AE0C00210E1A /* Icons.swift in Sources */,
 				3FE1CEA52C1C90A700792E6C /* DetailedContactViewModel.swift in Sources */,
 				3FE1CEAB2C1CD60700792E6C /* WBNavBar.swift in Sources */,
+				3F9CE3BA2C4586C800DE0323 /* 4. PinsLinkedList.swift in Sources */,
 				3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */,
 				3F2832832C20A2840039F5B6 /* MAnchoerKey.swift in Sources */,
 				3FC29B092C36EAC900B697F2 /* EnterPhoneNumberScreen.swift in Sources */,
 				3FC29B102C36FA7900B697F2 /* View+Extension.swift in Sources */,
 				3F1B74472C10AAD700210E1A /* WBKeys.swift in Sources */,
 				3F1B745C2C134E9100210E1A /* Contact.swift in Sources */,
-				3FA2E06A2C399FD700D7D380 /* OtpFormFieldView.swift in Sources */,
-				3FC29B182C384EA200B697F2 /* VerificationCodeScreen.swift in Sources */,
+				3FA2E06A2C399FD700D7D380 /* 2. OtpFormFieldView.swift in Sources */,
+				3FC29B182C384EA200B697F2 /* 1. VerificationCodeScreen.swift in Sources */,
 				3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */,
 				3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */,
 				3F1B74122C0FC1EA00210E1A /* ContentView.swift in Sources */,
@@ -532,6 +548,7 @@
 				3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */,
 				3F1B741E2C108D8600210E1A /* ProceedButton.swift in Sources */,
 				3F1B746A2C1360E200210E1A /* ContactPhoto.swift in Sources */,
+				3F9CE3B42C457EE100DE0323 /* 1.1 VerificationModel.swift in Sources */,
 				3F1B742E2C109F6C00210E1A /* OnboardingView.swift in Sources */,
 				3F29C19F2C1A2E0C00C98B64 /* SearchView.swift in Sources */,
 				3F1B745A2C134CE000210E1A /* ContactsListViewModel.swift in Sources */,
@@ -542,7 +559,10 @@
 				3F1B74672C135CB200210E1A /* ContactRow.swift in Sources */,
 				3FC29B122C3719A500B697F2 /* Country.swift in Sources */,
 				3F29C1A52C1A44E900C98B64 /* Font+Extension.swift in Sources */,
+				3F9CE3BC2C45929500DE0323 /* OtpFormFieldViewLegacy.swift in Sources */,
+				3F9CE3B82C45868F00DE0323 /* 3. OtpCell.swift in Sources */,
 				3F1B74312C10A29200210E1A /* TabView.swift in Sources */,
+				3F9CE3B62C4582EA00DE0323 /* OtpNodeLinkedList.swift in Sources */,
 				3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */,
 				3F1B74222C108D9900210E1A /* TextLinkButton.swift in Sources */,
 				3FC29B142C3719C600B697F2 /* PhoneTextFieldView.swift in Sources */,

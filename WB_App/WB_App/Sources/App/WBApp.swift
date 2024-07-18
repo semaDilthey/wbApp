@@ -12,7 +12,7 @@ struct WBApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            VerificationCodeScreen(phoneNumber: "+79676155522")
+            VerificationCodeScreen()
         }
     }
 }
