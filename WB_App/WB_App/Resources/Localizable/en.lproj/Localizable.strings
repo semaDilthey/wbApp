@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  WB_App
+
+  Created by Семен Гайдамакин on 05.06.2024.
+  
+*/
+
+//Onboarding
+"onboarding_title" = "Socialize easily with friends";
+"agreement" = "Terms and Conditions";
+"start_chatting" = "Start chatting";
+
+//Verification/Auth flow
+"verification_guide_text_heading" = "Enter phone number";
+"verification_guide_text_body" = "We'll send a confirmation code to the specified number";
+
+//Tabs
+"tab_contacts" = "Contacts";
+"tab_chats" = "Chats";
+"tab_more" = "More";
+
+//Status
+"online" = "Online";
+
+//Actions
+"continue" = "Continue";
