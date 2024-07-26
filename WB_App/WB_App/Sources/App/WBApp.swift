@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct WBApp: App {
+    
+    @StateObject var viewModel : GoF_ViewModel = .init()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            GoF_View()
+                .environmentObject(viewModel)
         }
     }
 }
