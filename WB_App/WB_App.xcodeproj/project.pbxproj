@@ -38,6 +38,7 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3FA1BB152C4D5498009DE030 /* WBKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FA1BB142C4D5498009DE030 /* WBKit */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +83,7 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3FA1BB102C4D36C9009DE030 /* WBKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WBKit; path = Modules/WBKit; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA1BB152C4D5498009DE030 /* WBKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +109,10 @@
 		3F1B74032C0FC1EA00210E1A = {
 			isa = PBXGroup;
 			children = (
+				3FA1BB102C4D36C9009DE030 /* WBKit */,
 				3F1B740E2C0FC1EA00210E1A /* WB_App */,
 				3F1B740D2C0FC1EA00210E1A /* Products */,
+				3FA1BB112C4D38F6009DE030 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,6 +350,13 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3FA1BB112C4D38F6009DE030 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +409,9 @@
 			dependencies = (
 			);
 			name = WB_App;
+			packageProductDependencies = (
+				3FA1BB142C4D5498009DE030 /* WBKit */,
+			);
 			productName = WB_App;
 			productReference = 3F1B740C2C0FC1EA00210E1A /* WB_App.app */;
 			productType = "com.apple.product-type.application";
@@ -714,6 +729,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FA1BB142C4D5498009DE030 /* WBKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WBKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F1B74042C0FC1EA00210E1A /* Project object */;
 }

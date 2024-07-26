@@ -8,11 +8,7 @@
 import SwiftUI
 
 extension View {
-    
-    func navBarTitle(title: String) -> some View {
-        return self.modifier(NavigationTitleModifier(title: title))
-    }
-    
+
     func navBarBackButton<Route: Hashable>(router: Router<Route>, backTo title: String) -> some View {
         return self.modifier(NavBarBackButton<Route>(title: title))
             .environmentObject(router)
@@ -25,22 +21,6 @@ extension View {
 
 }
 
-struct NavigationTitleModifier: ViewModifier {
-    
-    var title: String
-    
-    func body(content: Content) -> some View {
-        content
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text(title)
-                        .font(.wbFont(.subheading1))
-                        .padding(.leading, 8)
-                }
-            }
-
-    }
-}
 
 struct NavBarRightButtonModifier: ViewModifier {
     

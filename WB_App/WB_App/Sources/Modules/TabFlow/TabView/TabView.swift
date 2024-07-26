@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WBKit
 
 struct TabsView: View {
     
