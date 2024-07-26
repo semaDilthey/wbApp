@@ -1,5 +1,4 @@
 import Foundation
-import Combine
 
 protocol Persistable: AnyObject {
     func createExercise(_ exercise : GoF_Exercise) async
@@ -7,7 +6,7 @@ protocol Persistable: AnyObject {
     func deleteExercise(id: UUID) async
 }
 
-//Класс - Singleton. Имитирует сервис по работе с базой данных
+//Актор - Singleton. Имитирует сервис по работе с базой данных
 
 actor GoF_ExercisesStore: ObservableObject, Persistable {
     
