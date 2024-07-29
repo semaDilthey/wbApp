@@ -1,0 +1,114 @@
+openapi: 3.1.0
+info:
+  title: VAT Comply API
+  description: VAT Comply API provides information about currency exchange rates.
+  version: 1.0.0
+servers:
+- url: https://api.vatcomply.com
+tags:
+- name: rates
+  description: Information about currency exchange rates
+paths:
+  /rates:
+    get:
+      tags:
+      - rates
+      summary: Retrieve currency exchange rates
+      operationId: getRates
+      responses:
+        "200":
+          description: A list of currency exchange rates
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RateList'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    RateList:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+        base:
+          type: string
+        rates:
+          type: object
+          properties:
+            EUR:
+              type: number
+            USD:
+              type: number
+            JPY:
+              type: number
+            BGN:
+              type: number
+            CZK:
+              type: number
+            DKK:
+              type: number
+            GBP:
+              type: number
+            HUF:
+              type: number
+            PLN:
+              type: number
+            RON:
+              type: number
+            SEK:
+              type: number
+            CHF:
+              type: number
+            ISK:
+              type: number
+            NOK:
+              type: number
+            TRY:
+              type: number
+            AUD:
+              type: number
+            BRL:
+              type: number
+            CAD:
+              type: number
+            CNY:
+              type: number
+            HKD:
+              type: number
+            IDR:
+              type: number
+            ILS:
+              type: number
+            INR:
+              type: number
+            KRW:
+              type: number
+            MXN:
+              type: number
+            MYR:
+              type: number
+            NZD:
+              type: number
+            PHP:
+              type: number
+            SGD:
+              type: number
+            THB:
+              type: number
+            ZAR:
+              type: number
+    ErrorModel:
+      type: object
+      properties:
+        code:
+          type: integer
+          minimum: 100
+          maximum: 600
+        message:
+          type: string

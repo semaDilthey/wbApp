@@ -38,6 +38,9 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3F991F492C584B2C00D546AF /* VATComplyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F991F482C584B2C00D546AF /* VATComplyAPI */; };
+		3F991F4C2C584C5300D546AF /* RatesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F4B2C584C5300D546AF /* RatesScreen.swift */; };
+		3F991F4E2C58524100D546AF /* RatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F4D2C58524100D546AF /* RatesModel.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +85,10 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3F991F442C58491200D546AF /* generateVATComply.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateVATComply.sh; sourceTree = "<group>"; };
+		3F991F462C584B0600D546AF /* VATComplyAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = VATComplyAPI; path = Modules/VATComplyAPI; sourceTree = "<group>"; };
+		3F991F4B2C584C5300D546AF /* RatesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesScreen.swift; sourceTree = "<group>"; };
+		3F991F4D2C58524100D546AF /* RatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesModel.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -97,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F991F492C584B2C00D546AF /* VATComplyAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +114,11 @@
 		3F1B74032C0FC1EA00210E1A = {
 			isa = PBXGroup;
 			children = (
+				3F991F462C584B0600D546AF /* VATComplyAPI */,
+				3F991F442C58491200D546AF /* generateVATComply.sh */,
 				3F1B740E2C0FC1EA00210E1A /* WB_App */,
 				3F1B740D2C0FC1EA00210E1A /* Products */,
+				3F991F472C584B2C00D546AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +133,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3F991F4A2C584C1900D546AF /* Lesson_16_Rates */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -345,6 +357,22 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3F991F472C584B2C00D546AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F991F4A2C584C1900D546AF /* Lesson_16_Rates */ = {
+			isa = PBXGroup;
+			children = (
+				3F991F4B2C584C5300D546AF /* RatesScreen.swift */,
+				3F991F4D2C58524100D546AF /* RatesModel.swift */,
+			);
+			path = Lesson_16_Rates;
+			sourceTree = "<group>";
+		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -397,6 +425,9 @@
 			dependencies = (
 			);
 			name = WB_App;
+			packageProductDependencies = (
+				3F991F482C584B2C00D546AF /* VATComplyAPI */,
+			);
 			productName = WB_App;
 			productReference = 3F1B740C2C0FC1EA00210E1A /* WB_App.app */;
 			productType = "com.apple.product-type.application";
@@ -481,10 +512,12 @@
 				3F29C1A52C1A44E900C98B64 /* Font+Extension.swift in Sources */,
 				3F1B74312C10A29200210E1A /* TabView.swift in Sources */,
 				3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */,
+				3F991F4C2C584C5300D546AF /* RatesScreen.swift in Sources */,
 				3F1B74222C108D9900210E1A /* TextLinkButton.swift in Sources */,
 				3FE1CEB02C1DCDE700792E6C /* Tabs.swift in Sources */,
 				3FE1CEAE2C1CDD8300792E6C /* ButtonModel.swift in Sources */,
 				3F1B74362C10A42D00210E1A /* MoreScreen.swift in Sources */,
+				3F991F4E2C58524100D546AF /* RatesModel.swift in Sources */,
 				3F1B744B2C10AFD500210E1A /* Constants.swift in Sources */,
 				3F1B743A2C10A45000210E1A /* ContactsListScreen.swift in Sources */,
 				3F1B74102C0FC1EA00210E1A /* WBApp.swift in Sources */,
@@ -714,6 +747,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F991F482C584B2C00D546AF /* VATComplyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VATComplyAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F1B74042C0FC1EA00210E1A /* Project object */;
 }
