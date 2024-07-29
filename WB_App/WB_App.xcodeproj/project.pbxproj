@@ -38,6 +38,8 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3F991F412C58306500D546AF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F402C58306500D546AF /* ImageLoader.swift */; };
+		3F991F432C58340500D546AF /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F991F422C58340500D546AF /* WebImage.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +84,8 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3F991F402C58306500D546AF /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		3F991F422C58340500D546AF /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				3F29C19D2C1A2E0400C98B64 /* Views */,
 				3F1B74562C1345F700210E1A /* NavBar */,
 				3F1B744C2C10B01E00210E1A /* Buttons */,
+				3F991F422C58340500D546AF /* WebImage.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				3FE1CE982C1C2ABB00792E6C /* AppManager */,
 				3F29C1A62C1A4A5200C98B64 /* Router */,
 				3F2832822C20A2840039F5B6 /* MAnchoerKey.swift */,
+				3F991F402C58306500D546AF /* ImageLoader.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -460,6 +466,7 @@
 				3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */,
 				3F1B74492C10AE0C00210E1A /* Icons.swift in Sources */,
 				3FE1CEA52C1C90A700792E6C /* DetailedContactViewModel.swift in Sources */,
+				3F991F432C58340500D546AF /* WebImage.swift in Sources */,
 				3FE1CEAB2C1CD60700792E6C /* WBNavBar.swift in Sources */,
 				3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */,
 				3F2832832C20A2840039F5B6 /* MAnchoerKey.swift in Sources */,
@@ -468,6 +475,7 @@
 				3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */,
 				3F1B74652C13585500210E1A /* DetailedContactScreen.swift in Sources */,
 				3F1B74122C0FC1EA00210E1A /* ContentView.swift in Sources */,
+				3F991F412C58306500D546AF /* ImageLoader.swift in Sources */,
 				3F1B74452C10AAB100210E1A /* String+Extension.swift in Sources */,
 				3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */,
 				3F1B741E2C108D8600210E1A /* ProceedButton.swift in Sources */,
