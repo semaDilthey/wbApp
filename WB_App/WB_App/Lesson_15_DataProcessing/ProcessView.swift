@@ -9,10 +9,8 @@ struct ProcessView: View {
             Text("Hello buddy")
         }
         .background(.white)
-        .onAppear {
-            Task {
-                await taskManager.process()
-            }
+        .task {
+            await taskManager.process()
         }
     }
 }
