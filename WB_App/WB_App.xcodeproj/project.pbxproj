@@ -38,6 +38,12 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3FB6C45B2C5A70A500199DC8 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C45A2C5A70A500199DC8 /* ProcessView.swift */; };
+		3FB6C4652C5A7DF300199DC8 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C4642C5A7DF300199DC8 /* TaskData.swift */; };
+		3FB6C4672C5A7E1000199DC8 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C4662C5A7E1000199DC8 /* Client.swift */; };
+		3FB6C4692C5A7E2D00199DC8 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C4682C5A7E2C00199DC8 /* Server.swift */; };
+		3FB6C46B2C5A7EA700199DC8 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C46A2C5A7EA700199DC8 /* TaskManager.swift */; };
+		3FB6C46D2C5A821D00199DC8 /* TaskError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6C46C2C5A821D00199DC8 /* TaskError.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +88,12 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3FB6C45A2C5A70A500199DC8 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		3FB6C4642C5A7DF300199DC8 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
+		3FB6C4662C5A7E1000199DC8 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		3FB6C4682C5A7E2C00199DC8 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		3FB6C46A2C5A7EA700199DC8 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		3FB6C46C2C5A821D00199DC8 /* TaskError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskError.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3FB6C4582C5A706700199DC8 /* Lesson_15_DataProcessing */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -345,6 +358,19 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3FB6C4582C5A706700199DC8 /* Lesson_15_DataProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6C45A2C5A70A500199DC8 /* ProcessView.swift */,
+				3FB6C4642C5A7DF300199DC8 /* TaskData.swift */,
+				3FB6C46C2C5A821D00199DC8 /* TaskError.swift */,
+				3FB6C4662C5A7E1000199DC8 /* Client.swift */,
+				3FB6C4682C5A7E2C00199DC8 /* Server.swift */,
+				3FB6C46A2C5A7EA700199DC8 /* TaskManager.swift */,
+			);
+			path = Lesson_15_DataProcessing;
+			sourceTree = "<group>";
+		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,6 +482,7 @@
 			files = (
 				3FE1CEB22C1DD6EE00792E6C /* Transition+Extension.swift in Sources */,
 				3F28327F2C2093880039F5B6 /* NavigationRouterView.swift in Sources */,
+				3FB6C46B2C5A7EA700199DC8 /* TaskManager.swift in Sources */,
 				3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */,
 				3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */,
 				3F1B74492C10AE0C00210E1A /* Icons.swift in Sources */,
@@ -463,6 +490,7 @@
 				3FE1CEAB2C1CD60700792E6C /* WBNavBar.swift in Sources */,
 				3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */,
 				3F2832832C20A2840039F5B6 /* MAnchoerKey.swift in Sources */,
+				3FB6C4692C5A7E2D00199DC8 /* Server.swift in Sources */,
 				3F1B74472C10AAD700210E1A /* WBKeys.swift in Sources */,
 				3F1B745C2C134E9100210E1A /* Contact.swift in Sources */,
 				3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */,
@@ -470,17 +498,21 @@
 				3F1B74122C0FC1EA00210E1A /* ContentView.swift in Sources */,
 				3F1B74452C10AAB100210E1A /* String+Extension.swift in Sources */,
 				3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */,
+				3FB6C4672C5A7E1000199DC8 /* Client.swift in Sources */,
 				3F1B741E2C108D8600210E1A /* ProceedButton.swift in Sources */,
 				3F1B746A2C1360E200210E1A /* ContactPhoto.swift in Sources */,
+				3FB6C45B2C5A70A500199DC8 /* ProcessView.swift in Sources */,
 				3F1B742E2C109F6C00210E1A /* OnboardingView.swift in Sources */,
 				3F29C19F2C1A2E0C00C98B64 /* SearchView.swift in Sources */,
 				3F1B745A2C134CE000210E1A /* ContactsListViewModel.swift in Sources */,
 				3F2832812C2093A30039F5B6 /* Routes.swift in Sources */,
+				3FB6C46D2C5A821D00199DC8 /* TaskError.swift in Sources */,
 				3F1B74382C10A44200210E1A /* ChatsScreen.swift in Sources */,
 				3F1B74672C135CB200210E1A /* ContactRow.swift in Sources */,
 				3F29C1A52C1A44E900C98B64 /* Font+Extension.swift in Sources */,
 				3F1B74312C10A29200210E1A /* TabView.swift in Sources */,
 				3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */,
+				3FB6C4652C5A7DF300199DC8 /* TaskData.swift in Sources */,
 				3F1B74222C108D9900210E1A /* TextLinkButton.swift in Sources */,
 				3FE1CEB02C1DCDE700792E6C /* Tabs.swift in Sources */,
 				3FE1CEAE2C1CDD8300792E6C /* ButtonModel.swift in Sources */,
