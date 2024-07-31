@@ -1,4 +1,4 @@
-/// актор сервера, который управляет клиентами и распределяет задачи
+/// актор сервера, который управляет клиентами и распределяет задачи. В нашем случае актор помогает решать проблему гонки данных (вроде как xd)
 actor Server {
     private var clients: [Int: Client] = [:]
     private var tasks: [TaskData] = []
@@ -16,7 +16,7 @@ actor Server {
     }
 
     /// распределяет задачи между клиентами
-    func distributeTasks() async {
+    func proceedTasks() async {
            await withTaskGroup(of: Void.self) { taskGroup in
                for task in tasks {
                    if let client = clients.values.randomElement() {

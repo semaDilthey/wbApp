@@ -21,7 +21,7 @@ final class TaskManager {
         await server.addTask(TaskData(id: 2, data: "task2"))
 
         // распределение задач и получение результатов
-        await server.distributeTasks()
+        await server.proceedTasks()
         let results = await server.getResults()
         let errors = await server.getErrors()
 
