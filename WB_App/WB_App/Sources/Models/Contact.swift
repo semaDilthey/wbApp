@@ -22,7 +22,16 @@ extension Contact {
     static func makeMock() -> Self {
         let names = ["Pasha", "Nick", "Kaosyan"]
         let surnames = ["Grigoryan", "Altman", "Zuckerberg", "Sena"]
-        let pics = ["1","2","3","4","5","6","7"]
+        let pics = [
+            "https://i.imgur.com/2k1ODbP.jpeg",
+            "https://i.imgur.com/sUWsv3m.jpeg",
+            "https://i.imgur.com/Ym2zcwf.jpeg",
+            "https://i.imgur.com/YzaqJlD.jpeg",
+            "https://i.imgur.com/qwzDjhc.jpeg",
+            "https://i.imgur.com/1PDAhW2.jpeg",
+            "https://i.imgur.com/jWmakzn.jpeg",
+            "https://i.imgur.com/l3gSyRn.jpeg"
+        ]
         return .init(name: names.randomElement()!,
                      surname: surnames.randomElement()!,
                      photo: pics.randomElement()!,

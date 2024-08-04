@@ -33,14 +33,12 @@ extension ContactPhoto {
             }
 
             if size.width >  60 {
-                Image(contact.photo)
-                    .resizable()
+                WebImage(urlString: contact.photo)
                     .scaledToFit()
                     .clipShape(.circle)
                     .padding(.horizontal, 86)
             } else {
-                Image(contact.photo)
-                    .resizable()
+                WebImage(urlString: contact.photo)
                     .scaledToFill()
                     .frame(width: UIConstants.photoSize,
                            height: UIConstants.photoSize)
@@ -77,7 +75,7 @@ extension ContactPhoto {
 }
 
 #Preview {
-    ContactPhoto(contact: .init(name: "", surname: "", photo: "123", status: .online, hasStory: true), 
+    ContactPhoto(contact: .init(name: "", surname: "", photo: "123", status: .online, hasStory: true),
                  size: CGSize(width: 48, height: 48))
 }
 
