@@ -26,4 +26,13 @@ enum LocalizableKeys {
     enum Status {
         static let online = "online".localized
     }
+    
+    enum Action {
+        static let `continue` = "continue".localized
+    }
+    
+    enum Verification {
+        static let guideHeading = "verification_guide_text_heading".localized
+        static let guideBody = "verification_guide_text_body".localized
+    }
 }

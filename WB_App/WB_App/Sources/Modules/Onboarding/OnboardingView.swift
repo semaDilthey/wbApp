@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
-//    @ObservedObject var router: Router = Router.shared
-    
+        
     @State var isSheetPresented = false
     
     var body: some View {
@@ -49,7 +47,7 @@ private extension OnboardingView {
     }
     
     var startButton: some View {
-        ProceedButton(state: .initial ,text: WBKeys.Onboarding.start) {
+        ProceedButton(title: WBKeys.Onboarding.start) {
             isSheetPresented = true
         }
             .sheet(isPresented: $isSheetPresented,
