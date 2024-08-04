@@ -12,6 +12,7 @@ struct WBApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            VerificationCodeScreen()
         }
     }
 }
