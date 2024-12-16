@@ -38,6 +38,10 @@
 		3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C1A72C1A4A5F00C98B64 /* Router.swift */; };
 		3F5A0B032C21732800340C8A /* ContactsTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */; };
 		3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */; };
+		3FCD404E2C53AD4900EB3C18 /* GoF_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD404D2C53AD4900EB3C18 /* GoF_View.swift */; };
+		3FCD40502C53B08D00EB3C18 /* GoF_ExercisesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD404F2C53B08D00EB3C18 /* GoF_ExercisesStore.swift */; };
+		3FCD40522C53B14400EB3C18 /* GoF_Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD40512C53B14400EB3C18 /* GoF_Exercise.swift */; };
+		3FCD405A2C53B9FF00EB3C18 /* GoF_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD40592C53B9FF00EB3C18 /* GoF_ViewModel.swift */; };
 		3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */; };
 		3FE1CEA12C1C902400792E6C /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */; };
 		3FE1CEA32C1C903D00792E6C /* SocialNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */; };
@@ -82,6 +86,10 @@
 		3F29C1A72C1A4A5F00C98B64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		3F5A0B022C21732800340C8A /* ContactsTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionAnimation.swift; sourceTree = "<group>"; };
 		3F5A0B042C218AA700340C8A /* ContactsTransitionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTransitionDTO.swift; sourceTree = "<group>"; };
+		3FCD404D2C53AD4900EB3C18 /* GoF_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoF_View.swift; sourceTree = "<group>"; };
+		3FCD404F2C53B08D00EB3C18 /* GoF_ExercisesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoF_ExercisesStore.swift; sourceTree = "<group>"; };
+		3FCD40512C53B14400EB3C18 /* GoF_Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoF_Exercise.swift; sourceTree = "<group>"; };
+		3FCD40592C53B9FF00EB3C18 /* GoF_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoF_ViewModel.swift; sourceTree = "<group>"; };
 		3FE1CE992C1C2AC800792E6C /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageManager.swift; sourceTree = "<group>"; };
 		3FE1CEA02C1C902400792E6C /* SocialNetworks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		3FE1CEA22C1C903D00792E6C /* SocialNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialNetworkView.swift; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 		3F1B740E2C0FC1EA00210E1A /* WB_App */ = {
 			isa = PBXGroup;
 			children = (
+				3FCD404C2C53AD2500EB3C18 /* GoF_Patterns */,
 				3F1B74292C109EE300210E1A /* Sources */,
 				3F1B74282C109EDE00210E1A /* Resources */,
 			);
@@ -345,6 +354,49 @@
 			path = TransitionAnimation;
 			sourceTree = "<group>";
 		};
+		3FCD404C2C53AD2500EB3C18 /* GoF_Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD40582C53B9F100EB3C18 /* ViewModel */,
+				3FCD40552C53B7FF00EB3C18 /* View */,
+				3FCD40572C53B80D00EB3C18 /* Service */,
+				3FCD40562C53B80500EB3C18 /* Model */,
+			);
+			path = GoF_Patterns;
+			sourceTree = "<group>";
+		};
+		3FCD40552C53B7FF00EB3C18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD404D2C53AD4900EB3C18 /* GoF_View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3FCD40562C53B80500EB3C18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD40512C53B14400EB3C18 /* GoF_Exercise.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FCD40572C53B80D00EB3C18 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD404F2C53B08D00EB3C18 /* GoF_ExercisesStore.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3FCD40582C53B9F100EB3C18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3FCD40592C53B9FF00EB3C18 /* GoF_ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3FE1CE972C1C2AA800792E6C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCD404E2C53AD4900EB3C18 /* GoF_View.swift in Sources */,
 				3FE1CEB22C1DD6EE00792E6C /* Transition+Extension.swift in Sources */,
 				3F28327F2C2093880039F5B6 /* NavigationRouterView.swift in Sources */,
 				3F5A0B052C218AA700340C8A /* ContactsTransitionDTO.swift in Sources */,
@@ -462,6 +515,7 @@
 				3FE1CEA52C1C90A700792E6C /* DetailedContactViewModel.swift in Sources */,
 				3FE1CEAB2C1CD60700792E6C /* WBNavBar.swift in Sources */,
 				3FE1CE9A2C1C2AC800792E6C /* AppStorageManager.swift in Sources */,
+				3FCD40522C53B14400EB3C18 /* GoF_Exercise.swift in Sources */,
 				3F2832832C20A2840039F5B6 /* MAnchoerKey.swift in Sources */,
 				3F1B74472C10AAD700210E1A /* WBKeys.swift in Sources */,
 				3F1B745C2C134E9100210E1A /* Contact.swift in Sources */,
@@ -479,7 +533,9 @@
 				3F1B74382C10A44200210E1A /* ChatsScreen.swift in Sources */,
 				3F1B74672C135CB200210E1A /* ContactRow.swift in Sources */,
 				3F29C1A52C1A44E900C98B64 /* Font+Extension.swift in Sources */,
+				3FCD40502C53B08D00EB3C18 /* GoF_ExercisesStore.swift in Sources */,
 				3F1B74312C10A29200210E1A /* TabView.swift in Sources */,
+				3FCD405A2C53B9FF00EB3C18 /* GoF_ViewModel.swift in Sources */,
 				3F29C1A82C1A4A5F00C98B64 /* Router.swift in Sources */,
 				3F1B74222C108D9900210E1A /* TextLinkButton.swift in Sources */,
 				3FE1CEB02C1DCDE700792E6C /* Tabs.swift in Sources */,
